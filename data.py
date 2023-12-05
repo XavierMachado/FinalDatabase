@@ -1,3 +1,5 @@
+#from data import Data
+
 class Data:
     def __init__(self):
         self.college_data = (1, 'Tigers', 'Coach Smith', 1990, 'Tiger Stadium')

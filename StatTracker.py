@@ -1,20 +1,31 @@
 from getpass import getpass
 from mysql.connector import connect, Error
-#from data import Data
 
-def teamInfo(string):
+def findTeam(team):
+    #SQL Query
+    if team == None:
+        return None
+    return team
+
+def teamInfo(string, team):
+    #SQL Query
     return 0
 
-def seasonalStats(string):
+def seasonalStats(string, team):
+    #SQL Query
     return 0
 
-def bestGrade(string):
-    return 0;
+def bestGrade(string, team):
+    #SQL Query
+    return 0
 
 def display(string):
     team = input("What team are you looking for? ")
     #Check if team is in data
-    if team
+    findTeam(team)
+    if findTeam == None:
+        print("Team Not Found. Please Check Spelling and try again")
+        display(string)
     print("What would you like to do?")
     print("""
           1 View Team Info
@@ -23,11 +34,11 @@ def display(string):
             """)
     inp = input("Enter Option: ")
     if inp == '1':
-        return teamInfo(string)
+        return teamInfo(string, team)
     elif inp == '2':
-        return seasonalStats(string)
+        return seasonalStats(string, team)
     elif inp == '3':
-        return bestGrade(string)
+        return bestGrade(string, team)
     else:
         print("Not a valid input.")
 
