@@ -18,7 +18,7 @@ This program provides a simple interface to interact with a college statistics d
    - Open up a terminal and execute.
 
    `bash
-   python your_script_name.py
+   py your_script_name.py
    `
 
 ## Usage
