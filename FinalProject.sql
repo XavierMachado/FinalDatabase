@@ -1,3 +1,6 @@
+CREATE SCHEMA STATS;
+USE STATS;
+
 -- Create College table
 CREATE TABLE College (
     TeamID INT PRIMARY KEY,
@@ -87,14 +90,21 @@ INSERT INTO PlayerGameStats (GameID, PlayerID, TeamID, PassingAttempts, PassYard
 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);*/
 
 -- Insert data into College table
-INSERT INTO College (TeamID, Mascot, Coach, FoundedYear, StadiumName)
+INSERT INTO College (TeamID, CollegeName, Mascot, Coach, FoundedYear, StadiumName)
 VALUES (1, 'LSU', 'Tigers', 'Coach Smith', 1990, 'Tiger Stadium');
 
 -- Insert data into Player table
 INSERT INTO Player (PlayerID, FirstName, LastName, Class, Positions)
 VALUES
     (1, 'John', 'Doe', 'Senior', 'Quarterback'),
-    (2, 'Juan', 'Smith', 'Junior', 'Wide Receiver');
+    (2, 'Juan', 'Smith', 'Junior', 'Wide Receiver'),
+    (3, 'Robert', 'Johnson', 'Sophomore', 'Running Back'),
+	(4, 'Tyler', 'Evans', 'Freshman', 'Tight End'),
+	(5, 'Derrick', 'Thomas', 'Senior', 'Defensive End'),
+	(6, 'David', 'Taylor', 'Junior', 'Defensive Tackle'),
+	(7, 'Lucas', 'Morgan', 'Senior', 'Linebacker'),
+	(8, 'Cameron', 'Roberts', 'Sophomore', 'Cornerback'),
+	(9, 'Samuel', 'Nelson', 'Junior', 'Safety');
     -- Add other players as needed;
 
 -- Insert data into TeamPlayerRelationship table
