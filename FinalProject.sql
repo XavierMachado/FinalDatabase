@@ -1,6 +1,7 @@
 -- Create College table
 CREATE TABLE College (
     TeamID INT PRIMARY KEY,
+    CollegeName VARCHAR(50),
     Mascot VARCHAR(50),
     Coach VARCHAR(50),
     FoundedYear INT,
@@ -87,13 +88,13 @@ VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);*/
 
 -- Insert data into College table
 INSERT INTO College (TeamID, Mascot, Coach, FoundedYear, StadiumName)
-VALUES (1, 'Tigers', 'Coach Smith', 1990, 'Tiger Stadium');
+VALUES (1, 'LSU', 'Tigers', 'Coach Smith', 1990, 'Tiger Stadium');
 
 -- Insert data into Player table
 INSERT INTO Player (PlayerID, FirstName, LastName, Class, Positions)
 VALUES
     (1, 'John', 'Doe', 'Senior', 'Quarterback'),
-    (2, 'Jane', 'Smith', 'Junior', 'Wide Receiver');
+    (2, 'Juan', 'Smith', 'Junior', 'Wide Receiver');
     -- Add other players as needed;
 
 -- Insert data into TeamPlayerRelationship table
