@@ -8,12 +8,11 @@ This program provides a simple interface to interact with a college statistics d
    - Ensure you have a MySQL database named "STATS" set up.
    - Modify the `main()` function in the script to provide your MySQL server details.
 
-   `python
+   ```python
    host = "localhost"
    user = input("Enter username: ")
    password = getpass("Enter password: ")
    database = "STATS"
-   `
 
 2. **Execution:**
    - Open up a terminal and execute.
