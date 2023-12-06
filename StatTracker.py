@@ -85,7 +85,7 @@ def display(connection):
         print("What would you like to access?")
         print("""
               1 Team Info
-              2 Seasonal Stats
+              2 Team Seasonal Stats
               3 Average Performance Grades
               """)
         inp = input("Enter Option: ")
