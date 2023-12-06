@@ -17,7 +17,7 @@ This program provides a simple interface to interact with a college statistics d
 2. **Execution:**
    - Open up a terminal and execute.
 
-   `bash
+   `
    py your_script_name.py
    `
 
