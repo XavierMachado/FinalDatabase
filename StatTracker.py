@@ -2,10 +2,13 @@ from getpass import getpass
 from mysql.connector import connect, Error
 
 def findTeam(team):
-    # SQL Query (you might need to replace 'teams' with your actual table name)
+    # SQL Query
+    query = f"""
+    SELECT * FROM College WHERE CollegeName = '{team}';
+    """
     if team is None:
         return None
-    return team
+    return query
 
 def teamInfo(team):
     # SQL Query
@@ -17,7 +20,7 @@ def teamInfo(team):
     return query
 
 def seasonalStats(team):
-    # Replace 'PlayerGameStats' with your actual table name
+    # SQL Query
     query = f"""
     SELECT
         'Team' AS EntityType,
@@ -50,7 +53,17 @@ def seasonalStats(team):
 def grades(team):
     # SQL Query
     query = f"""
-    -- Your best grade query here
+    SELECT
+        p.PlayerID,
+        AVG(pgs.PlayerPerformanceGrade) AS AveragePerformanceGrade
+    FROM
+        PlayerGameStats pgs
+    JOIN
+        Player p ON pgs.PlayerID = p.PlayerID
+    GROUP BY
+        p.PlayerID
+    ORDER BY
+        AveragePerformanceGrade DESC;
     """
     return query
 
