@@ -17,10 +17,8 @@ It allows users to retrieve information about college teams, their seasonal stat
 
 2. **Execution**
     - Open up a terminal and execute.
-     
-    '''python
-    py your_script_name.py
 
+    python your_script_name.py
 
 ## Usage
 Search for a College:
