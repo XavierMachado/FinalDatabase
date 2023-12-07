@@ -48,4 +48,4 @@ This program provides a simple interface to interact with a college statistics d
 
 ## Additional Customization
 
-Feel free to customize the code based on your specific needs. You can add more queries, improve the user interface, or extend the functionality as required.
+Feel free to customize the code based on your specific needs. You can add more queries, improve the user interface, or extend the functionality as required by you.
